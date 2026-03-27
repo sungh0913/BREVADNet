@@ -1,4 +1,4 @@
-# BRENet
+# BREVADNet
 A Boundary-Regularization-Enhanced Video Anomaly Detection Network Based on Context-Adaptive Spatio-Temporal Conditional Diffusion
 
 DataSet DownLoad:
