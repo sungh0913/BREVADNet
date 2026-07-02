@@ -1,0 +1,44 @@
+{
+    "model": {
+        "type": "fusion_unet",
+        "input_size": 64,
+        "in_channels": 3,
+        "out_channels": 3,
+        "z_channels": 3,
+        "clip_len": 5,
+        "ch": 128,
+        "ch_mult": [1, 2, 4, 4],
+        "num_res_blocks": 2,
+        "attn_resolutions": [8],
+        "dropout": 0.1,
+        "num_heads": 8,
+        "resamp_with_conv": true,
+        "scale_factor": 0.205676,
+        "sigma_data": 0.6206,
+        "sigma_min": 0.02,
+        "sigma_max": 80.0,
+        "sigma_sample_density": {
+            "type": "lognormal",
+            "mean": -1.2,
+            "std": 1.2
+        },
+        "sampler": "lms"
+    },
+    "optimizer": {
+        "type": "adamw",
+        "lr": 2e-4,
+        "betas": [0.9, 0.999],
+        "eps": 1e-6,
+        "weight_decay": 1e-4
+    },
+    "lr_sched": {
+        "type": "linear_warmup_cosine",
+        "warmup_epochs": 5,
+        "note": "Overridden manually in train_ano.py"
+    },
+    "ema_sched": {
+        "type": "inverse",
+        "power": 0.6667,
+        "max_value": 0.9999
+    }
+}
