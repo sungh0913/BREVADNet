@@ -1,12 +1,8 @@
 # BREVADNet
 A Boundary-Regularization-Enhanced Video Anomaly Detection Network Based on Context-Adaptive Spatio-Temporal Conditional Diffusion
 
-## DataSet Download
-
-* **UCSD Ped2:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
-* **CUHK Avenue:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
-* **ShanghaiTech:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
-
+## 1. Dependencies
+```
 torch==2.1.2+cu121
 torchvision==0.16.2+cu121
 numpy==1.22.4
@@ -22,3 +18,10 @@ accelerate==0.21.0
 torchmetrics==1.0.3
 torchdiffeq==0.2.3
 jsonmerge==1.9.2
+```
+
+## 2. DataSet Download
+
+* **UCSD Ped2:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
+* **CUHK Avenue:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
+* **ShanghaiTech:** <https://github.com/StevenLiuWen/ano_pred_cvpr2018>
