@@ -1,6 +1,6 @@
-# BREVADNet
+# BRE-VADNet
 A Boundary-Regularization-Enhanced Video Anomaly Detection Network Based on Context-Adaptive Spatio-Temporal Conditional Diffusion
-
+![pipeline](./graph.png)
 ## 1. Dependencies
 ```
 torch==2.1.2+cu121
